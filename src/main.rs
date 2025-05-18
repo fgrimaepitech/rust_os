@@ -16,7 +16,12 @@ fn sleep() {
 
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
-    println!("Welcome to Rust OS!");
+    println!("    ____             __     ____  _____");
+    println!("   / __ \\__  _______/ /_   / __ \\/ ___/");
+    println!("  / /_/ / / / / ___/ __/  / / / /\\__ \\ ");
+    println!(" / _, _/ /_/ (__  ) /_   / /_/ /___/ / ");
+    println!("/_/ |_|\\__,_/____/\\__/   \\____//____/  ");
+    println!("                                       ");
     println!("Type something (press Enter to submit):\n");
     
     let mut keyboard = Keyboard::new();
