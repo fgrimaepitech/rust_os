@@ -51,9 +51,9 @@ struct Buffer {
 }
 
 pub struct Writer {
-  column_position: usize,
-  color_code: ColorCode,
-  buffer: &'static mut Buffer,
+    pub column_position: usize,
+    color_code: ColorCode,
+    buffer: &'static mut Buffer,
 }
 
 impl Writer {
