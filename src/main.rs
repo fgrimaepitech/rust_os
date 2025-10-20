@@ -1,5 +1,5 @@
-#![no_std] // ne pas lier la bibliothèque standard Rust
-#![no_main] // désactiver tous les points d'entrée au niveau de Rust
+#![no_std]
+#![no_main]
 #![feature(abi_x86_interrupt)]
 
 mod vga_buffer;
@@ -34,7 +34,6 @@ pub extern "C" fn _start() -> ! {
     }
 }
 
-/// Cette fonction est appelée à chaque panic.
 #[panic_handler]
 fn panic(_info: &PanicInfo) -> ! {
     println_err!("{}", _info);
