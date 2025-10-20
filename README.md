@@ -1,5 +1,7 @@
 # Rust OS
 
+![CleanShot 2025-05-18 at 18 18 50@2x](https://github.com/user-attachments/assets/8a3da09f-6f08-4a84-a660-5ed96b5bf06f)
+
 ## Build
 
 `cargo bootimage`
