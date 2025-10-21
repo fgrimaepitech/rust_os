@@ -29,6 +29,8 @@ test-args = [
     "-display", "none"
 ]
 test-success-exit-code = 33
-
-[package.metadata.bootimage]
 test-timeout = 300
+
+[[test]]
+name = "should_panic"
+harness = false
