@@ -43,6 +43,9 @@ pub extern "C" fn _start() -> ! {
     println!("/_/ |_|\\__,_/____/\\__/   \\____//____/  ");
     println!("                                       ");
     println!("Type something (press Enter to submit):\n");
+
+    rust_os::init();
+    x86_64::instructions::interrupts::int3();
     
     let mut keyboard = Keyboard::new();
     print!("> ");
